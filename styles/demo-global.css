@@ -1,0 +1,100 @@
+
+:root {
+  --background: #F1F0EC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  padding: 10px;
+}
+
+#container {
+  display: grid;
+  justify-items: center;
+}
+
+@media (min-width: 600px) {
+  #container {
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 30px;
+  }
+}
+
+#inputs {
+  width: 100%;
+  max-width: 400px;
+}
+
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 1rem;
+}
+
+#character {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+#character h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
+}
+
+#character p {
+  margin: 20px 0 0 0;
+  font-size: .9em;
+}
+
+.forest {
+  background: #CFB590;
+  color: #49281F;
+  border: 3px solid #758918;
+  font-family: 'Gwendolyn';
+  font-size: 1.4rem;
+}
+
+.space {
+  background: #240047;
+  color: #40FFDC;
+  border: 3px solid #00A9D4;
+  font-family: 'Concert One';
+  font-size: 1.0rem;
+}
+
+.mountain {
+  background: #876B53;
+  color: #EEE4A9;
+  border: 3px solid #FBCAC5;
+  font-family: 'Space Grotesk';
+  font-size: 0.9rem;
+}
+
+.ocean {
+  background: #E9F2F9;
+  color: #1B325F;
+  border: 3px solid #3A89C9;
+  font-family: 'Lato';
+  font-size: 0.9rem;
+}
